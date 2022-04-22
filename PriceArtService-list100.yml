@@ -1,0 +1,32 @@
+#Application Config
+application:
+  listino: 100
+# ==============================================================
+# = Actuator Parameters
+# ==============================================================
+management:
+  info:
+    env:
+      enabled: true
+    git:
+      enabled: true
+      mode: full
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+# ==============================================================
+# = Actuator Info
+# ==============================================================
+info:
+  assistenza:
+    nome: "Nicola La Rocca"
+    mail: "nicola_larocca@xantrix.it"
+    telefono: "33412345678"
+    orario: "9-20"
+  nome:
+    nome-app: "Articoli Web Service - Autenticazione OAUTH2 keycloak"
+  profilo: GitHub
