@@ -1,7 +1,7 @@
 #Application Config
 application:
    listino: 1
-   sconto: 2
+   sconto: 10
 # ==============================================================
 # = Actuator Parameters
 # ==============================================================
@@ -18,7 +18,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics
+        include: health,info,metrics,refresh
 # ==============================================================
 # = Actuator Info
 # ==============================================================
