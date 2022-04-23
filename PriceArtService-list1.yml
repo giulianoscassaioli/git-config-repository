@@ -1,7 +1,8 @@
 #Application Config
 application:
-   listino: 1
-   sconto: 10
+  listino: 1
+  sconto: 10
+  
 # ==============================================================
 # = Actuator Parameters
 # ==============================================================
@@ -19,16 +20,17 @@ management:
     web:
       exposure:
         include: health,info,metrics,refresh
+
 # ==============================================================
 # = Actuator Info
 # ==============================================================
 info:
   assistenza:
-    nome: "Nicola La Rocca"
-    mail: "nicola_larocca@xantrix.it"
-    telefono: "33412345678"
-    orario: "9-20"
+    nome: Nicola La Rocca
+    mail: nicola_larocca@xantrix.it
+    telefono: 334-12345678
+    orario: 9-20
   nome:
-    nome-app: "Articoli Web Service - Autenticazione OAUTH2 keycloak"
+    nome-app: PriceArt Web Service - Autenticazione OAUTH2 keycloak
   profilo: GitHub
-
+  variante: promo
